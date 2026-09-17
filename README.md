@@ -1,32 +1,26 @@
-# React + TypeScript + Vite
+# Cauã Bessa
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Sistema de Reserva de Mesas em Restaurante
 
-Currently, two official plugins are available:
+**Código:** PP-166GBWU-18OVORD
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📋 Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Aplicação web desenvolvida em **React + Vite + TypeScript** para gerenciamento de reservas de mesas em um restaurante. O sistema permite registrar reservas, acompanhar o status de cada mesa, cancelar reservas, filtrar por status e buscar por nome de cliente.
 
-## Expanding the Oxlint configuration
+Projeto desenvolvido como avaliação individual, com dados mantidos em memória (`useState`), sem integração com backend.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 🚀 Tecnologias Utilizadas
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- React
+- Vite
+- TypeScript
+- SQL Server Express (para o script `banco.sql` da Entrega 4)
+
+---
+
+## 📁 Estrutura do Projeto
