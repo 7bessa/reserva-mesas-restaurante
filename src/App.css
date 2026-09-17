@@ -1,0 +1,182 @@
+/* src/App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.codigo {
+  font-family: monospace;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.resumo {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.resumo h2 {
+  margin-top: 0;
+}
+
+.resumo ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.resumo li {
+  background: #f0f0f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.filtros input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.filtros-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filtros-status button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.filtros-status button.ativo {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.lista-mesas {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.lista-mesas li {
+  background: #fff;
+  border-left: 6px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.lista-mesas li.mesa-status-livre { border-left-color: #28a745; }
+.lista-mesas li.mesa-status-reservada { border-left-color: #ffc107; }
+.lista-mesas li.mesa-status-ocupada { border-left-color: #dc3545; }
+.lista-mesas li.mesa-status-cancelada { border-left-color: #6c757d; }
+
+.mesa-info {
+  flex: 1 1 300px;
+  font-size: 0.95rem;
+}
+
+.mesa-acoes {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mesa-acoes select,
+.mesa-acoes button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.mesa-acoes button {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+form {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  flex: 1 1 160px;
+}
+
+form button {
+  padding: 10px 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background: #0062cc;
+}
